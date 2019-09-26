@@ -88,7 +88,43 @@
         <div class="btn">Sign Me Up!</div>
       </div>
     </section>
-  </div><!-- container -->
+  </div>
+  
+      <div class="container">
+      <div class="contact">
+        <div class="contact-container">
+          <form action="/action_page.php">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your First & Last Name...">
+   
+            <label for="phone">Phone</label>
+            <input type="text" id="phone" name="phone" placeholder="(###) ###-####">
+
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="hello@your-email.com">
+
+            <label for="Package">Select Your Package</label>
+            <div class="custom-select">
+              <select>
+                <option value="0">Select</option>
+                <option value="1">Fun In The Sun</option>
+                <option value="2">Mountain Excursion</option>
+                <option value="3">Island Getaway</option>
+              </select>
+            </div>
+
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Leave your special instructions here..."
+              style="height:200px"></textarea>
+   
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+      </div>
+    </div>
+  
+  
+  <!-- container -->
 
   <footer class="footer">
     <p>Copyright Fun Bus 2018</p>
