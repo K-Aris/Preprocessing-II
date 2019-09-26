@@ -1,1 +1,19 @@
 // Mixins in here
+
+.signMeUp-button(@width; @rem; @color; @bgColor) {
+    width: @width;
+    height:@rem; 
+    color: @color;
+    background-color: @bgColor; 
+}
+
+.btn {
+    .signMeUp-button(83%; 4rem; white; #008080);
+    border-radius: 15px;
+    text-align: center; 
+    vertical-align: middle;  
+    line-height: 240%;
+    font-weight: bold; 
+    font-size: 1.6rem;  
+    border: 1px solid grey; 
+}
