@@ -1,7 +1,7 @@
 // Navigation Styles here
 
 .border {
-    border: 1px dashed black; 
+    border: ; 
 }
 
 .flex-row(@justify; @align) {
@@ -9,14 +9,19 @@
     flex-direction: row; 
     justify-content: @justify;
     align-items: @align;
+
 }
 
 .nav-header {
-    // .border; 
-    border-bottom: 1px dashed black; 
+    .border; 
+    border-bottom: 2px dashed grey; 
     width: 100%; 
     height: 6rem;
     .flex-row(center; center); 
+
+    @media @mobile {
+        height: 8rem; 
+    }
 }
 
 .nav-container {
@@ -24,13 +29,20 @@
     .flex-row(space-between; center); 
     max-width: 800px;
     width: 100%; 
-    height: 6rem; 
+    height: 6rem;
+        
+    @media @mobile {
+        flex-direction: column;
+        height: 8rem; 
+    }
+    
 
     .text-logo {
         .border;  
         
         h2 {
             padding: 0%; 
+            font-weight: bold; 
         }
         
     }
@@ -38,13 +50,18 @@
     nav {
         .border; 
         width: 40%;
-        .flex-row(space-between; center);  
+        .flex-row(space-around; center);  
     
         a {
             text-decoration: none; 
             color: black; 
-            font-size: 1.2rem; 
+            font-size: 1.3rem;
+            font-weight: bold;  
+        }
+
+        @media @mobile {
+            width: 100%; 
+            margin-bottom: 3%; 
         }
     }
-
 }
